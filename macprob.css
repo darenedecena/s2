@@ -1,0 +1,81 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 100vh; /* Full height of the viewport */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px; /* Add some space between buttons and squares */
+}
+
+.day-button {
+    border: 1px solid #000000;
+    margin-bottom: 10px; /* Increase margin between buttons */
+    padding: 10px 20px; /* Adjust padding */
+    cursor: pointer;
+    transition: transform 0.3s; /* Smooth transition */
+}
+
+.day-button:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+.squares-container {
+    position: relative; /* Set the position to relative for absolute positioning */
+}
+
+.square {
+    position: absolute;
+    width: 50px; /* Adjust the size of the square */
+    height: 50px;
+    border: 3px solid transparent;
+    transition: transform 1.5s ease-out, background-color 3s ease-out;
+}
+
+/* Add specific styling for each day's square */
+#monsq {
+    background-color: #bb05f3;
+    border-color: #bb05f3;
+    left: 50%;
+}
+
+#tuessq {
+    background-color: #ffa1d5;
+    border-color: #ffa1d5;
+    left: 50%;
+}
+
+#wedsq {
+    background-color: #2600ff;
+    border-color: #2600ff;
+    left: 50%;
+}
+
+#thurssq {
+    background-color: #00ff00;
+    border-color: #00ff00;
+    left: 50%;
+}
+
+#frisq {
+    background-color: #fffb00;
+    border-color: #fffb00;
+    left: 50%;
+}
+
+#satsq {
+    background-color: #ff7300;
+    border-color: #ff7300;
+    left: 50%;
+}
+
+#sunsq {
+    background-color: #ff0000;
+    border-color: #ff0000;
+    left: 50%;
+}
